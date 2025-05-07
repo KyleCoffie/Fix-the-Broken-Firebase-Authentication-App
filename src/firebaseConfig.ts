@@ -2,14 +2,17 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY", // Missing actual API key
-  authDomain: "YOUR_AUTH_DOMAIN", // Missing auth domain
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCR1cIQhyFh8G8eDrHcYQ4s46Nq876D_L4",
+  authDomain: "fir-project-d0695.firebaseapp.com",
+  projectId: "fir-project-d0695",
+  storageBucket: "fir-project-d0695.firebasestorage.app",
+  messagingSenderId: "339438867897",
+  appId: "1:339438867897:web:4cd37b3d8cff5097e35268",
+  measurementId: "G-022QYKRK03"
 };
 
 // Initialize Firebase (MISSING export for `auth`)
 const app = initializeApp(firebaseConfig);
-getAuth(app); // auth variable not exported
+const auth = getAuth(app);
+
+export { auth };
